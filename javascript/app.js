@@ -26,3 +26,12 @@ const sumDigits = (numbers) => {
 };
 
 console.log(sumDigits(987698765439874574));
+
+const calculateSide = (sideA, sideB) => {
+	// sideA^2 + sideB^2 = sideC^2
+	// sideC = sqrt(sideA^2 + sideB^2) ---- sideC is what we want
+	const sideC = Math.sqrt((Math.pow(sideA, 2))+(Math.pow(sideB, 2)));
+		return sideC;
+}
+
+console.log(calculateSide(34, 40));
