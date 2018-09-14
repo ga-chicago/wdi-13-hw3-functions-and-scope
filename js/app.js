@@ -14,13 +14,25 @@
 
 // Palindrome again
 
-const checkPalindrome = (aStr) => {
-	const aStrLower = aStr.toLowerCase();
-	const aStrReversed = aStrLower.split('').reverse().join('');
-	if(aStrLower === aStrReversed) {
-		return true;
-	} else {
-		return false;
+// const checkPalindrome = (aStr) => {
+// 	const aStrLower = aStr.toLowerCase();
+// 	const aStrReversed = aStrLower.split('').reverse().join('');
+// 	if(aStrLower === aStrReversed) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
+// console.log(checkPalindrome('RaceCar'));
+
+// Digit Sum
+
+const sumDigits = (aNum) => {	
+	let digits = aNum.toString().split('')
+	let sum = 0;
+	for(let i = 0; i < digits.length; i++){
+		sum += Number(digits[i])
 	}
+	return sum;
 }
-console.log(checkPalindrome('RaceCar'));
+console.log(sumDigits(5634));
