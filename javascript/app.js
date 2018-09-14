@@ -19,7 +19,7 @@ const sumDigits = (numbers) => {
 	const digitsArray = digits.split("");
 	console.log(digitsArray)
 	let sum = 0;
-	for(i = 0; i < digitsArray.length; i++) {
+	for(let i = 0; i < digitsArray.length; i++) {
 		sum = (sum + Number(digitsArray[i]));
 	};
 	return(sum);
@@ -38,7 +38,7 @@ console.log(calculateSide(34, 40));
 
 const sumArray = (array) => {
 	let total = 0;
-	for(i = 0; i < array.length; i++) {
+	for(let i = 0; i < array.length; i++) {
 		total += Number(array[i]);
 	};
 	return(total);
@@ -48,7 +48,7 @@ console.log(sumArray([45, 2, 3,9, 76]));
 
 const checkPrime = (num) => {
 	const squareRoot = Math.floor(Math.sqrt(num));
-	for(i = 2; i <= squareRoot; i++) {
+	for(let i = 2; i <= squareRoot; i++) {
 		if(num % i === 0) {
 			return(false);
 		} else {
@@ -57,16 +57,15 @@ const checkPrime = (num) => {
 }
 };
 
-console.log(checkPrime(28));
+console.log(checkPrime(13));
 
-// const printPrimes = (testNumber) => {
-// 	for(i = 1; i <= testNumber; i++) {
-// 		if(checkPrime(i) === true) {
-// 			console.log(i);
-// 		}
-// 	}
-// }
+const printPrimes = (testNumber) => {
+	for(let i = 2; i <= testNumber; i++) {
+		if(checkPrime(i) === true) {
+			console.log(i);
+		}
+	}
+}
+printPrimes(97);
 
-
-// checkPrime function works, but printPrimes seems to be running infinitely? trying to debug and figure out what's going on...probably just need to not look at it for a minute and come back to it...
-// printPrimes(97);
+// Got printPrimes to work, had true as string and not Boolean.
