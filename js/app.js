@@ -36,3 +36,31 @@ if(words.toUpperCase() === reverseWord.toUpperCase()) {
  console.log(checkPalindrome('Mom'));
 
 
+
+//DIGIT SUM
+
+// Write a function sumDigits that accepts a number and returns the sum of its digits.
+
+const sumDigits = (num) => {
+	//this code works, but will not go past the number 9
+	//I do not understand how to accomplish this
+	return (num - 1) % 9 +1;
+} 
+console.log(sumDigits(55));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
