@@ -67,4 +67,6 @@ console.log(checkPrime(28));
 // 	}
 // }
 
+
+// checkPrime function works, but printPrimes seems to be running infinitely? trying to debug and figure out what's going on...probably just need to not look at it for a minute and come back to it...
 // printPrimes(97);
