@@ -39,7 +39,14 @@ const calculateSide = (sideA,sideB) => {
 	return Math.sqrt(sideA**2 + sideB**2);
 }
 
-
+//5. Sum Array
+const sumArray = (array) => {
+	let sum = 0;
+	for(let i = 0; i < array.length; i++) {
+		sum += array[i];
+	}
+	return sum;
+}
 
 
 
