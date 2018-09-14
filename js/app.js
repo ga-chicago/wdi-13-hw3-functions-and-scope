@@ -48,6 +48,30 @@ const sumArray = (array) => {
 	return sum;
 }
 
+//6. Prime Numbers
+//Function to check whether a number is prime
+const checkPrime = (number) => {
+	let factorCheck = 0;
+	for(let i = 0; i <= Math.sqrt(number); i++) {
+		if(number % i === 0) {
+			factorCheck ++;
+		}
+	}
+	if(factorCheck === 1) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+//Function to print all primes up to an arbitrary number
+const printPrimes = (limit) => {
+	for(let i = 0; i <= limit; i++) {
+		if(checkPrime(i) === true) {
+			console.log(i);
+		}
+	}
+}
 
 
 
