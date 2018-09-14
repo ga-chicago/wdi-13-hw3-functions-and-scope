@@ -37,9 +37,24 @@
 // }
 // console.log(sumDigits(5634));
 
-const calculateSides = (sideA, sideB) => {
-	const aAndBSquared = ((sideA ** 2) + (sideB ** 2));
-	const answer = Math.sqrt(aAndBSquared);
-	return answer;
+// Pythagoras
+
+// const calculateSides = (sideA, sideB) => {
+// 	const aAndBSquared = ((sideA ** 2) + (sideB ** 2));
+// 	const answer = Math.sqrt(aAndBSquared);
+// 	return answer;
+// }
+// console.log(calculateSides(25, 6));
+
+// Sum Array
+
+const sumArray = (anArray) => {
+	const array = anArray;
+	let sum2 = 0;
+	for(i = 0; i < array.length; i++) {
+		sum2 += array[i];
+	}
+	return sum2;
 }
-console.log(calculateSides(25, 6));
+
+console.log(sumArray([1, 5, 7, 8, 10, 5]));
