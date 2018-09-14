@@ -33,3 +33,31 @@ const sumDigits = (number) => {
 	}
 	return sum;
 }
+
+//4. Pythagoras
+const calculateSide = (sideA,sideB) => {
+	return Math.sqrt(sideA**2 + sideB**2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
