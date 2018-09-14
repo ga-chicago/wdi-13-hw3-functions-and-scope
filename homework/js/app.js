@@ -51,3 +51,38 @@ const calculateSide = (sideA, sideB) => {
 }
 //console log the function, and putting parameters in
 console.log(calculateSide(5,1));
+
+//------------------Sum Array------------------//
+//
+// Write a function sumArray that takes an array as an argument. The array should contain numbers. The function should return the sum of the numbers in the array.
+//I want to start with zero and add each value of the array to our initial value until we've looped through the whole array. 
+const sumArray = function(arr){
+  return arr.reduce(function(a,b){
+    return a + b
+  }, 0);
+}
+
+
+//-----------------Prime Numbers-----------------//
+// A Prime number is a number that is not evenly divisible by another number except 1 and itself. If you want to read more deeply about it, go here. To test whether a number is Prime, you only need to test as far as the square root of that number. This is advisable for optimization and testing large numbers.
+
+// Step One
+// Write a function called checkPrime that will test whether a number is Prime. The function will return true (Boolean) if Prime, false if not. Hint: Check every number up to the square root. To do this, try a for loop.
+
+// Step Two
+// Write another function called printPrimes that will print (console log) all the Primes up to an arbitrary limit. For example, if you invoke your function with printPrimes(97), it will print all the Prime numbers up to and including 97. This function can call on the previous checkPrime function.
+
+//declaring function checkPrime that takes the parameter num
+const checkPrime = (num) =>{
+	//for loop that starts at 2 all the way up to our num. then adds one
+	for(let i = 2; i<num; i++ ) {
+		//if the remainder of the num  with the current value being looped is zero, we know it's not prime
+		if (num % i === 0){
+			//return false
+			return false
+		}
+	}
+	//return num is greater than 1
+		return num > 1;
+	}
+console.log(checkPrime(23));
