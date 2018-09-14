@@ -14,11 +14,7 @@ console.log("works");
 const checkPalindrome = (word) => {
 	const reverseWord = word.split("").reverse().join("").toUpperCase();
 	console.log(reverseWord)
-	
 // console.log(word.toUpperCase());
-//
-
-
 	if (word.toUpperCase() === reverseWord.toUpperCase()){
 		return true
 	} else {
@@ -86,3 +82,15 @@ const checkPrime = (num) =>{
 		return num > 1;
 	}
 console.log(checkPrime(23));
+//i seriously don't get any of this. I just dont get it. It's so discouraging.
+
+// Step Two
+// Write another function called printPrimes that will print (console log) all the Primes up to an arbitrary limit. For example, if you invoke your function with printPrimes(97), it will print all the Prime numbers up to and including 97. This function can call on the previous checkPrime function.
+
+const printPrime = (total) => {
+	for (let i = 0; i<total; i++){
+		if (checkPrime(i))
+			console.log(i);
+	}
+}
+console.log(printPrime(167));
