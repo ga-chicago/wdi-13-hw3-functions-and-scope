@@ -13,3 +13,16 @@ const checkPalindrome = (word) => {
 };
 
 console.log(checkPalindrome("Madam"));
+
+const sumDigits = (numbers) => {
+	const digits = numbers.toString();
+	const digitsArray = digits.split("");
+	console.log(digitsArray)
+	let sum = 0;
+	for(i = 0; i < digitsArray.length; i++) {
+		sum = (sum + Number(digitsArray[i]));
+	};
+	return(sum);
+};
+
+console.log(sumDigits(987698765439874574));
