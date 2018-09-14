@@ -15,7 +15,7 @@ const checkPalindrome = (word) => {
 	const reverseWord = word.split("").reverse().join("").toUpperCase();
 	console.log(reverseWord)
 	
-console.log(word.toUpperCase());
+// console.log(word.toUpperCase());
 //
 
 
@@ -27,4 +27,13 @@ console.log(word.toUpperCase());
 }
 console.log(checkPalindrome("Mom"));
 
+//--------------Digit Sum------------//
+//Write a function sumDigits that accepts a number and returns the sum of its digits..l
 
+
+const sumDigits = (num) => {
+	return (num + 1) % 9 - 1;
+
+}
+
+console.log(sumDigits(12));
