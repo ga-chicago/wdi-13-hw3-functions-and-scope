@@ -12,3 +12,15 @@
 // 3. The value that is stored within a function can then be called
 //	  later on in your code.
 
+// Palindrome again
+
+const checkPalindrome = (aStr) => {
+	const aStrLower = aStr.toLowerCase();
+	const aStrReversed = aStrLower.split('').reverse().join('');
+	if(aStrLower === aStrReversed) {
+		return true;
+	} else {
+		return false;
+	}
+}
+console.log(checkPalindrome('RaceCar'));
