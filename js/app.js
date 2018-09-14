@@ -20,3 +20,19 @@
 // to give anything other than the default/input value back. i.e., 
 // if a function can't return a new value, it's not really doing anything. 
 
+
+//2. Palindrom again
+
+const isPalindrom = (word) => {
+	const forwards = (word.toLowerCase());
+ 	const backwards = (forwards.split("").reverse().join("")); 
+ 	if (forwards === backwards) {
+		return `Woo hoo! ${word} is Palindrome!`;
+	} 	else return `Uh oh, ${word} is not a palindrome :(`; 
+}
+
+
+
+// console.log(isPalindrom('RaCeCar'));
+
+// console.log(isPalindrom('mAmam'));
