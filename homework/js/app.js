@@ -37,3 +37,17 @@ const sumDigits = (num) => {
 }
 
 console.log(sumDigits(12));
+
+//---------------Pythagoras-------------//
+//
+// Write a function calculateSide that takes two arguments: sideA and sideB, and returns the solution for sideC using the Pythagorean theorem.
+// hint: discover the Pythagorean Theorem on a website called google.com
+// hint: checkout the Math methods in javascript
+//declared variable 
+const calculateSide = (sideA, sideB) => {
+	//returns value --> the square root of sideA&sideB to the 2nd power
+	return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+
+}
+//console log the function, and putting parameters in
+console.log(calculateSide(5,1));
