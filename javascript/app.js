@@ -35,3 +35,13 @@ const calculateSide = (sideA, sideB) => {
 }
 
 console.log(calculateSide(34, 40));
+
+const sumArray = (array) => {
+	let total = 0;
+	for(i = 0; i < array.length; i++) {
+		total += Number(array[i]);
+	};
+	return(total);
+};
+
+console.log(sumArray([45, 2, 3,9, 76]));
