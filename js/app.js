@@ -27,12 +27,19 @@
 
 // Digit Sum
 
-const sumDigits = (aNum) => {	
-	let digits = aNum.toString().split('')
-	let sum = 0;
-	for(let i = 0; i < digits.length; i++){
-		sum += Number(digits[i])
-	}
-	return sum;
+// const sumDigits = (aNum) => {	
+// 	let digits = aNum.toString().split('')
+// 	let sum = 0;
+// 	for(let i = 0; i < digits.length; i++){
+// 		sum += Number(digits[i])
+// 	}
+// 	return sum;
+// }
+// console.log(sumDigits(5634));
+
+const calculateSides = (sideA, sideB) => {
+	const aAndBSquared = ((sideA ** 2) + (sideB ** 2));
+	const answer = Math.sqrt(aAndBSquared);
+	return answer;
 }
-console.log(sumDigits(5634));
+console.log(calculateSides(25, 6));
