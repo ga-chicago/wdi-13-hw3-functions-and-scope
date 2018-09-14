@@ -5,3 +5,11 @@ console.log("up and running");
 // 2. Return gives the function a value within your program when the program is run while console.log will display the result of the invoked function within your console
 // 3. The ability to return a value within a function allows you to store this value within a variable or call upon the result after it is returned
 
+const checkPalindrome = (word) => {
+	newWord = word.toUpperCase();
+	if(newWord === newWord.split("").reverse().join("")) {
+		return(`${word} is a palindrome`)
+	}
+};
+
+console.log(checkPalindrome("Madam"));
