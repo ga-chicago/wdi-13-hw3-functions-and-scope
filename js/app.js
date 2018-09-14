@@ -9,3 +9,16 @@
 //3. What are the implications of the ability of a function to return a value?
 //There are intermediate or final values used by programs that aren't
 //seen by the user.
+
+//2. Palindrome again
+const checkPalindrome = (word) => {
+	let reversed = "";
+	for(let i = 0; i < word.length; i++) {
+		reversed = word[i].toLowerCase() + reversed;
+	}
+	if(word.toLowerCase() === reversed) {
+		return true;
+	} else {
+		return false;
+	}
+}
