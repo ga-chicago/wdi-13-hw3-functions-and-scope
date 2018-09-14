@@ -62,6 +62,42 @@ console.log(calculateSide(5,12));
 
 
 
+//SUM ARRAY
+
+// Write a function sumArray that takes an array as an argument. The array should contain numbers. The function should return the sum of the numbers in the array.
+
+// const sumArray = (a,b) => {
+// 	let getSum [1,2,3].reduce(add, 0);
+// 		return a + b;
+
+// }
+// console.log(sum)
+
+
+
+//PRIME NUMBERS 
+
+// Write a function called checkPrime that will test whether a number is Prime. The function will return true (Boolean) if Prime, false if not. Hint: Check every number up to the square root. To do this, try a for loop.
+
+	const checkPrime = (num) => {
+		for(let i = 2; i < num; i++) {
+			if(num % i === 0) {
+				return false;
+			}
+		}
+		 return num > 1;
+	}
+console.log(checkPrime(22))
+
+	const printPrime = (total) => {
+		for (i = 0; i < total; i++) {
+			if (checkPrime(i))
+				// return true;
+			console.log(i);
+		}
+	}
+console.log(printPrime(167));
+
 
 
 
