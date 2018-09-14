@@ -45,3 +45,26 @@ const sumArray = (array) => {
 };
 
 console.log(sumArray([45, 2, 3,9, 76]));
+
+const checkPrime = (num) => {
+	const squareRoot = Math.floor(Math.sqrt(num));
+	for(i = 2; i <= squareRoot; i++) {
+		if(num % i === 0) {
+			return(false);
+		} else {
+			return(true);
+		}
+}
+};
+
+console.log(checkPrime(28));
+
+// const printPrimes = (testNumber) => {
+// 	for(i = 1; i <= testNumber; i++) {
+// 		if(checkPrime(i) === true) {
+// 			console.log(i);
+// 		}
+// 	}
+// }
+
+// printPrimes(97);
