@@ -48,13 +48,51 @@
 
 // Sum Array
 
-const sumArray = (anArray) => {
-	const array = anArray;
-	let sum2 = 0;
-	for(i = 0; i < array.length; i++) {
-		sum2 += array[i];
+// const sumArray = (anArray) => {
+// 	const array = anArray;
+// 	let sum2 = 0;
+// 	for(i = 0; i < array.length; i++) {
+// 		sum2 += array[i];
+// 	}
+// 	return sum2;
+// }
+
+// console.log(sumArray([1, 5, 7, 8, 10, 5]));
+
+// Prime Numbers
+
+
+// I couldn't seem to get this to work. I tried as many ways as
+// I could think to make it work, but once I raised the number high
+// enough, it would freak out and give me bad info.
+
+const checkPrime = (aNumber) => {
+	let numRoot = Math.floor(Math.sqrt(aNumber))
+	if(numRoot < 2) {
+		return true;
 	}
-	return sum2;
+	for(let i = 2; i < numRoot; i++) {
+		if(aNumber % i === 0) {
+			return true;	
+		} else {
+			return false;
+		}
+	}
 }
 
-console.log(sumArray([1, 5, 7, 8, 10, 5]));
+
+const printPrimes = (primeNumber) => {
+	for(let i = 0; i < primeNumber; i++) {
+		if(checkPrime(i) === true) {
+			console.log(i);
+		}
+	}
+}
+printPrimes(23)
+
+
+
+
+
+
+;
