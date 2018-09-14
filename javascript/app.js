@@ -48,16 +48,15 @@ console.log(sumArray([45, 2, 3,9, 76]));
 
 const checkPrime = (num) => {
 	const squareRoot = Math.floor(Math.sqrt(num));
-	for(let i = 2; i <= squareRoot; i++) {
+	for(let i = 2; i < squareRoot; i++) {
 		if(num % i === 0) {
 			return(false);
-		} else {
-			return(true);
 		}
 }
+return true;
 };
 
-console.log(checkPrime(13));
+console.log(checkPrime(95));
 
 const printPrimes = (testNumber) => {
 	for(let i = 2; i <= testNumber; i++) {
