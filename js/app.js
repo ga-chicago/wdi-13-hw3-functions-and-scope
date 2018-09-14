@@ -22,3 +22,14 @@ const checkPalindrome = (word) => {
 		return false;
 	}
 }
+
+//3. Digit sum
+const sumDigits = (number) => {
+	const string = number.toString();
+	const array = string.split('');
+	let sum = 0;
+	for(let i = 0; i < string.length; i++) {
+		sum += Number(array[i]);
+	}
+	return sum;
+}
