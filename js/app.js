@@ -30,7 +30,7 @@ if(words.toUpperCase() === reverseWord.toUpperCase()) {
 	return true;
 } else {
 	return false;
-}
+	}
 }
 
  console.log(checkPalindrome('Mom'));
@@ -62,8 +62,10 @@ console.log(sum);
 
 
 const calculateSide = (sideA,sideB) => {
-	//a2 + b2 = c2 Math sqrt(Squares it)Math,Power(to the power)
+	
+  
   return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2))};
+
 console.log(calculateSide(5,12));
 
 
