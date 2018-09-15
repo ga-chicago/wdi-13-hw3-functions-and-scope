@@ -52,8 +52,6 @@ function sumDigits(a, b) {
 console.log(sum);
 
 
-// console.log(sum);
-
 
 
 
@@ -96,19 +94,16 @@ console.log(sumArray[2,3])
 		}
 		 return num > 1;
 	}
-// console.log(checkPrime(22))
+console.log(checkPrime(22))
 
-	// const printPrime = (total) => {
-	// 	for (i = 0; i < total; i++) {
-	// 		if (checkPrime(i))
-				// return true;
-			// console.log(i);
-		// }
-	// }
-// console.log(printPrime(167));
-
-
-
+	const printPrime = (total) => {
+		for (i = 0; i < total; i++) {
+			if (checkPrime(i))
+				return true;
+			console.log(i);
+		}
+	}
+console.log(printPrime(167));
 
 
 
