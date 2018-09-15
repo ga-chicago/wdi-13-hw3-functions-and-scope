@@ -73,9 +73,11 @@ const printPrimes = (limit) => {
 	}
 }
 
-
-
-
+//Hungry for More
+//2. Write a function insertDash that accepts a number as a parameter and returns a string with a dash inserted between any consecutive odd numbers. There should not be a dash at the end, it goes only between numbers.
+const insertDash = (num) => {
+	
+}
 
 
 
