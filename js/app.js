@@ -40,13 +40,21 @@ if(words.toUpperCase() === reverseWord.toUpperCase()) {
 //DIGIT SUM
 
 // Write a function sumDigits that accepts a number and returns the sum of its digits.
+// const sumDigits = (numbers) => {
+	
 
-const sumDigits = (num) => {
-	//this code works, but will not go past the number 9
-	//I do not understand how to accomplish this
-	return (num - 1) % 9 +1;
-} 
-console.log(sumDigits(34));
+let sum = [1, 2, 3].reduce(sumDigits, 0);
+
+function sumDigits(a, b) {
+    return a + b;
+}
+
+console.log(sum);
+
+
+// console.log(sum);
+
+
 
 
 //PYTHAGORAS
@@ -66,14 +74,15 @@ console.log(calculateSide(5,12));
 
 // Write a function sumArray that takes an array as an argument. The array should contain numbers. The function should return the sum of the numbers in the array.
 
-// const sumArray = (a,b) => {
-// 	let getSum [1,2,3].reduce(add, 0);
-// 		return a + b;
+const sumArray = (a,b) => {
+	let getSum = 0
+	for(let i = 0; i < sumArray.length; i++) {
+		getSum += sumArray[i];
+	}
 
-// }
-// console.log(sum)
-
-
+	return getSum;
+}
+console.log(sumArray[2,3])
 
 //PRIME NUMBERS 
 
@@ -87,16 +96,16 @@ console.log(calculateSide(5,12));
 		}
 		 return num > 1;
 	}
-console.log(checkPrime(22))
+// console.log(checkPrime(22))
 
-	const printPrime = (total) => {
-		for (i = 0; i < total; i++) {
-			if (checkPrime(i))
+	// const printPrime = (total) => {
+	// 	for (i = 0; i < total; i++) {
+	// 		if (checkPrime(i))
 				// return true;
-			console.log(i);
-		}
-	}
-console.log(printPrime(167));
+			// console.log(i);
+		// }
+	// }
+// console.log(printPrime(167));
 
 
 
