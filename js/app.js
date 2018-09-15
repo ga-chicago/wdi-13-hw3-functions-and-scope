@@ -12,6 +12,20 @@
 
 
 
+const checkPalindrome = (word) => {
+	// console.log(word.split("").reverse().join(""))
+	word = word.toLowerCase()
+	const reversedWord = word.toLowerCase().split("").reverse().join("")
+	return reversedWord === word;
+	}
+	
+
+console.log(checkPalindrome("Borscht"));
+
+console.log(checkPalindrome("Radar"));
+   
+
+
 
 
 
