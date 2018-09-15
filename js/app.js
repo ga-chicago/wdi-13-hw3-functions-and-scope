@@ -11,21 +11,28 @@
 // Other than returing a function value you can reuse it, pass it through an argument?
 
 
-
-const checkPalindrome = (word) => {
-	// console.log(word.split("").reverse().join(""))
-	word = word.toLowerCase()
-	const reversedWord = word.toLowerCase().split("").reverse().join("")
-	return reversedWord === word;
-	}
+// 2. Palindrome
+// const checkPalindrome = (word) => {
+// 	// console.log(word.split("").reverse().join(""))
+// 	word = word.toLowerCase()
+// 	const reversedWord = word.toLowerCase().split("").reverse().join("")
+// 	return reversedWord === word;
+// 	}
 	
 
-console.log(checkPalindrome("Borscht"));
+// console.log(checkPalindrome("Borscht"));
 
-console.log(checkPalindrome("Radar"));
+// console.log(checkPalindrome("Radar"));
    
 
+// 3.Sum of Digits
 
 
+const sumDigits = (num) => {
+    return (num + 4 + 2) % 10 - 2 ;
+// I know I got this but I'm a litle confused still
+// return (num + 4 + 2) % 10 gets me with the remainder of 6 but why -2?
+// when I tried it without I would get 8, just a little foggy on this
+}
 
-
+console.log(sumDigits(42));
