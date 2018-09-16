@@ -28,11 +28,33 @@
 // 3.Sum of Digits
 
 
-const sumDigits = (num) => {
-    return (num + 4 + 2) % 10 - 2 ;
-// I know I got this but I'm a litle confused still
-// return (num + 4 + 2) % 10 gets me with the remainder of 6 but why -2?
-// when I tried it without I would get 8, just a little foggy on this
+// const sumDigits = (num) => {
+//     return (num + 4 + 2) % 10 - 2 ;
+// // I know I got this but I'm a litle confused still
+// // return (num + 4 + 2) % 10 gets me with the remainder of 6 but why -2?
+// // when I tried it without I would get 8, just a little foggy on this
+// }
+
+// console.log(sumDigits(42));
+
+// Write a function calculateSide that takes two arguments: sideA and sideB, and returns the solution for sideC using the Pythagorean theorem.
+// hint: discover the Pythagorean Theorem on a website called google.com
+// hint: checkout the Math methods in javascript
+//declared variable 
+
+const calculateSide = (sideA, sideB) => {
+    
+    return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+
 }
 
-console.log(sumDigits(42));
+console.log(calculateSide(8, 6));
+
+
+
+
+
+
+
+
+
