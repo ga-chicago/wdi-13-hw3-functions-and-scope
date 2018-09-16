@@ -42,19 +42,21 @@
 // hint: checkout the Math methods in javascript
 //declared variable 
 
-const calculateSide = (sideA, sideB) => {
+// const calculateSide = (sideA, sideB) => {
     
-    return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+//     return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
 
-}
+// }
 
-console.log(calculateSide(8, 6));
-
-
+// Sum Array
 
 
+const sum = [1, 2, 3, 4, 5, 6].reduce(function (accumulator, currentValue) {
+  return accumulator + currentValue;
+}, 0);
+
+console.log(sum);
 
 
 
-
-
+	
